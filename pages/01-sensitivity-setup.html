@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#01 靈敏度與低延遲配置 | VALO-BASE</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-title"><span>//</span> VALO-BASE 戰術資料庫</div>
+    <a href="../index.html" class="nav-link">← 返回資料庫首頁</a>
+  </header>
+
+  <main class="content-container">
+    <div class="article-header">
+      <span class="badge">系統與硬體</span>
+      <h1>靈敏度、準心與低延遲連線配置</h1>
+      <div class="meta">編號 #01 ・ 適用環境：Windows 11 PC / 亞太伺服器</div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-box">
+        <div class="stat-label">滑鼠 DPI</div>
+        <div class="stat-value">800 DPI</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">遊戲內靈敏度</div>
+        <div class="stat-value">0.32</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">換算 eDPI</div>
+        <div class="stat-value">256 eDPI</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">主力伺服器</div>
+        <div class="stat-value">香港 / 東京</div>
+      </div>
+    </div>
+
+    <section class="guide-section">
+      <h2>1. 準心與射擊手感設定</h2>
+      <ul>
+        <li><strong>準心代碼：</strong><code>0;P;c;5;o;1;d;1;z;1;0b;0;1b;0</code>（青色實心小點，避免遮擋遠距離頭部判定）。</li>
+        <li><strong>關閉滑鼠加速：</strong>確認 Windows 指標設定已取消勾選「增強指標精確度」，確保肌肉記憶一致。</li>
+        <li><strong>NVIDIA Reflex：</strong>設定為「開啟 + 加速」，降低系統渲染延遲。</li>
+      </ul>
+      <div class="tactical-note">
+        <strong>實戰小提醒：</strong>練習場測試時，以「手腕微調可穩定鎖定 Bot 頭部、手臂大擺動剛好轉身 180 度」作為微調基準。
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>2. 連線延遲與錯誤代碼排解</h2>
+      <ul>
+        <li><strong>節點選擇：</strong>優先勾選「香港」與「東京」雙節點；若晚間尖峰時段香港出現跳 Ping 或封包遺失，可透過連線優化工具鎖定東京路由。</li>
+        <li><strong>Vanguard 常見異常：</strong>若遇到 <code>VAN</code> 系列連線錯誤，優先檢查背景防毒軟體是否阻擋 <code>vgc</code> 服務，並以系統管理員身分重啟用戶端。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>VALO-BASE // #01</span>
+    <div class="footer-nav">
+      <a href="../index.html">目錄</a>
+      <a href="02-jett-guide.html">下一篇：婕提進點攻略 →</a>
+    </div>
+  </footer>
+</body>
+</html>
